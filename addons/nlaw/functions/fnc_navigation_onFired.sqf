@@ -4,13 +4,17 @@
  * Sets up missile guidance state arrays (called from missileGuidance's onFired).
  *
  * Arguments:
- * Guidance Arg Array <ARRAY>
+ * 0: Fired EH arguments <ARRAY>
+ * 1: Launch Parameters <ARRAY>
+ * 2: Flight Parameters <ARRAY>
+ * 3: Seeker Parameters (not used) <ARRAY>
+ * 4: State Parameters <ARRAY>
  *
  * Return Value:
  * Navigation Parameters <ARRAY>
  *
  * Example:
- * [] call ace_nlaw_fnc_onFired
+ * [] call ace_nlaw_fnc_navigation_onFired
  *
  * Public: No
  */

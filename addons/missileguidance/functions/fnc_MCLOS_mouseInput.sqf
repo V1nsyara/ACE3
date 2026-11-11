@@ -7,10 +7,10 @@
  * None
  *
  * Return Value:
- * Handled
+ * Input handled <BOOL>
  *
  * Example:
- * [] call ace_missileguidance_fnc_MCOLS_mouseInput
+ * [] call ace_missileguidance_fnc_MCLOS_mouseInput
  *
  * Public: No
  */

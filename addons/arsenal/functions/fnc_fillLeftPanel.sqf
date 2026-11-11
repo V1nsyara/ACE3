@@ -7,13 +7,13 @@
  * Arguments:
  * 0: Arsenal display <DISPLAY>
  * 1: Tab control <CONTROL>
- * 2: Animate panel refresh <BOOL>
+ * 2: Animate panel refresh <BOOL> (default: true)
  *
  * Return Value:
  * None
  *
  * Public: No
-*/
+ */
 
 params ["_display", "_control", ["_animate", true]];
 

@@ -4,13 +4,18 @@
  * Attempts to hold angle as fed to by seeker. Does so with a simple proportional controller
  *
  * Arguments:
- * Guidance Arg Array <ARRAY>
+ * 0: Guidance Arg Array <ARRAY>
+ * 1: Timestep (not used) <NUMBER>
+ * 2: Seeker Target PosASL (not used) <ARRAY>
+ * 3: Profile Adjusted Target PosASL <ARRAY>
+ * 4: Target Data (not used) <ARRAY>
+ * 5: Navigation Parameters <ARRAY>
  *
  * Return Value:
  * Commanded acceleration normal to LOS in world space <ARRAY>
  *
  * Example:
- * [] call ace_missileguidance_fnc_navigationType_line
+ * [] call ace_nlaw_fnc_navigation
  *
  * Public: No
  */

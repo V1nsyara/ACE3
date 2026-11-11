@@ -13,7 +13,7 @@
  * None
  *
  * Public: No
-*/
+ */
 
 params ["", "_args"];
 _args params ["_display"];
@@ -54,7 +54,7 @@ if (isNil QGVAR(virtualItems)) then {
 
     _virtualItems = createHashMapFromArray _virtualItems;
 
-    for "_index" from IDX_VIRT_ITEMS_ALL to IDX_VIRT_MISC_ITEMS do {
+    for "_index" from IDX_VIRT_ITEMS_ALL to IDX_VIRT_MISC_GOGGLES do {
         _virtualItems set [_index, createHashMap];
     };
 
@@ -155,6 +155,7 @@ private _centerPos = position GVAR(center);
 if (is3DEN) then {
     GVAR(centerOrigin) = GVAR(center);
     GVAR(centerOrigin) hideObject true;
+    { _x hideObject true } forEach (attachedObjects GVAR(centerOrigin));
 
     private _centerOriginParent = objectParent GVAR(centerOrigin);
 

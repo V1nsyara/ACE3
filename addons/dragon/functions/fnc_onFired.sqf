@@ -4,8 +4,11 @@
  * Runs when Dragon is fired
  *
  * Arguments:
- * 0: None
- * 1: The weapon that was fired <OBJECT>
+ * 0: Fired EH arguments <ARRAY>
+ * 1: Launch Parameters (not used) <ARRAY>
+ * 2: Flight Parameters (not used) <ARRAY>
+ * 3: Seeker Parameters <ARRAY>
+ * 4: State Parameters <ARRAY>
  *
  * Return Value:
  * None

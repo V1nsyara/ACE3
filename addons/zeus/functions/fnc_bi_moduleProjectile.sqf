@@ -6,7 +6,7 @@
  * Edited to remove radio warning and add ballistics support
  *
  * Arguments:
- * 0: The module logic <LOGIC>
+ * 0: The module logic <OBJECT>
  * 1: units <ARRAY>
  * 2: activated <BOOL>
  *
@@ -110,7 +110,7 @@ if (_activated) then {
                 } forEach allPlayers;
             };
         };
-        if (count _hint > 0 && {objectCurators _logic isNotEqualTo []}) then {
+        if ((_hint isNotEqualTo []) && {objectCurators _logic isNotEqualTo []}) then {
             [[_hint,nil,nil,nil,nil,nil,nil,true],"bis_fnc_advHint",objectCurators _logic] call bis_fnc_mp;
         };
         if (count _velocity == 3) then {

@@ -4,13 +4,13 @@
  * Saves all textboxes to whatever settings say for PB mode
  *
  * Arguments:
- * Current PB mode <NUMBER>
+ * 0: Current PB mode <NUMBER>
  *
  * Return Value:
  * None
  *
  * Example:
- * [] call ace_missileguidance_fnc_gps_saveAttackSettings
+ * [] call ace_missileguidance_fnc_gps_loadAttackSettings
  *
  * Public: No
  */
